@@ -5,3 +5,7 @@ version = "0.0.1"
 authors = [
     { name = "Mark Final", email = "markfinal@hotmail.com" }
 ]
+
+[metadata]
+long_description = file:README.md
+long_description_content_type = text/markdown
