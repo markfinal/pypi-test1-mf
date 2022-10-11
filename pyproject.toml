@@ -1,0 +1,7 @@
+[project]
+name = "pypi-test1-mf"
+description = "PyPi test project by Mark"
+version = "0.0.1"
+authors = [
+    { name = "Mark Final", email = "markfinal@hotmail.com" }
+]
