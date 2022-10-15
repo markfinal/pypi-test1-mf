@@ -1,0 +1,13 @@
+name: Tagtest
+on: push
+
+jobs:
+  build-n-publish:
+    name: Testing tagging
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Describe
+      run: |
+        git describe --all --tags
