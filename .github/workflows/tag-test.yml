@@ -18,9 +18,11 @@ jobs:
         git describe --all --tags
 
     - name: Describe no tag
+      continue-on-error: true
       run: |
         git describe
     - name: Describe with tag
+      continue-on-error: true
       if: startsWith(github.ref, 'refs/tags')
       run: |
         git describe
