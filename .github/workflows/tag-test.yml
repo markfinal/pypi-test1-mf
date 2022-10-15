@@ -9,10 +9,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Describe no tag
+    - name: Describe no tag (all)
       run: |
         git describe --all --tags
-    - name: Describe with tag
+    - name: Describe with tag (all)
       if: startsWith(github.ref, 'refs/tags')
       run: |
         git describe --all --tags
+
+    - name: Describe no tag
+      run: |
+        git describe
+    - name: Describe with tag
+      if: startsWith(github.ref, 'refs/tags')
+      run: |
+        git describe
