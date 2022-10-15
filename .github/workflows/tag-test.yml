@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Echo GITHUB_REF_NAME
-      run: echo $GITHUB_REF_NAME
+    - name: Echo GITHUB_REF_NAME and GITHUB_REF_TYPE
+      run: echo $GITHUB_REF_NAME + $GITHUB_REF_TYPE
 
     - name: Describe no tag (all tags)
       run: |
