@@ -1,0 +1,13 @@
+name: Protection Test
+on: push
+
+jobs:
+  banana:
+    name: Testing protection
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - run: echo " Print a single environment variable (the commit SHA ) - ${{ github.sha }} "
+    - run: echo "Print all environment variables"
+    - run:  env
